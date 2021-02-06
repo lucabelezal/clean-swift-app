@@ -23,16 +23,18 @@ public final class LoginPresenter {
                 guard let self = self else { return }
                 self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
                 switch result {
+                case .success:
+                    self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Login feito com sucesso."))
+                    
                 case .failure(let error):
                     var errorMessage: String!
                     switch error {
                     case .expiredSession:
-                    errorMessage = "Email e/ou senha inválido(s)."
+                        errorMessage = "Email e/ou senha inválido(s)."
                     default:
-                    errorMessage = "Algo inesperado aconteceu, tente novamente em alguns instantes."
+                        errorMessage = "Algo inesperado aconteceu, tente novamente em alguns instantes."
                     }
                     self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: errorMessage))
-                case .success: self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Login feito com sucesso."))
                 }
             }
         }

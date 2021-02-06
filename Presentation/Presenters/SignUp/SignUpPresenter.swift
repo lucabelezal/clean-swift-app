@@ -23,6 +23,8 @@ public final class SignUpPresenter {
                 guard let self = self else { return }
                 self.loadingView.display(viewModel: LoadingViewModel(isLoading: false))
                 switch result {
+                case .success:
+                    self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Conta criada com sucesso."))
                 case .failure(let error):
                     var errorMessage: String!
                     switch error {
@@ -32,7 +34,6 @@ public final class SignUpPresenter {
                         errorMessage = "Algo inesperado aconteceu, tente novamente em alguns instantes."
                     }
                     self.alertView.showMessage(viewModel: AlertViewModel(title: "Erro", message: errorMessage))
-                case .success: self.alertView.showMessage(viewModel: AlertViewModel(title: "Sucesso", message: "Conta criada com sucesso."))
                 }
             }
         }

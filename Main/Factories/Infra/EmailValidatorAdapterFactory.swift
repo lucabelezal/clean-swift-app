@@ -1,6 +1,6 @@
 import Foundation
 import Infra
 
-func makeAlamofireAdapter() -> AlamofireAdapter {
-    return AlamofireAdapter()
+func makeEmailValidatorAdapter() -> EmailValidatorAdapter {
+    return EmailValidatorAdapter()
 }

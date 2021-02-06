@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3231AB125CF14E8001F9C4A /* WelcomeControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3231AB025CF14E8001F9C4A /* WelcomeControllerFactory.swift */; };
 		FA008E8F244E4ED5002511B0 /* LoginControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA008E8E244E4ED5002511B0 /* LoginControllerFactoryTests.swift */; };
 		FA008E91244E4F89002511B0 /* RemoteAuthenticationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA008E90244E4F89002511B0 /* RemoteAuthenticationFactory.swift */; };
 		FA008E93244E4FB3002511B0 /* SignUpControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA008E92244E4FB3002511B0 /* SignUpControllerFactory.swift */; };
@@ -360,6 +361,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B3231AB025CF14E8001F9C4A /* WelcomeControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeControllerFactory.swift; sourceTree = "<group>"; };
 		FA008E8E244E4ED5002511B0 /* LoginControllerFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginControllerFactoryTests.swift; sourceTree = "<group>"; };
 		FA008E90244E4F89002511B0 /* RemoteAuthenticationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAuthenticationFactory.swift; sourceTree = "<group>"; };
 		FA008E92244E4FB3002511B0 /* SignUpControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpControllerFactory.swift; sourceTree = "<group>"; };
@@ -988,6 +990,7 @@
 			children = (
 				FA4E46CE2425263F0022CD9C /* LoginControllerFactory.swift */,
 				FA008E92244E4FB3002511B0 /* SignUpControllerFactory.swift */,
+				B3231AB025CF14E8001F9C4A /* WelcomeControllerFactory.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1564,7 +1567,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = MacBook;
 				TargetAttributes = {
 					FA488E32241D3E7A00A37153 = {
@@ -1892,6 +1895,7 @@
 				FA4E46CC242525CF0022CD9C /* RemoteAddAccountFactory.swift in Sources */,
 				FA4E46E82425649A0022CD9C /* MainQueueDispatchDecorator.swift in Sources */,
 				FA4E46DB24252FA30022CD9C /* Environment.swift in Sources */,
+				B3231AB125CF14E8001F9C4A /* WelcomeControllerFactory.swift in Sources */,
 				FAA44FC1244DECD5001748DB /* ApiUrlFactory.swift in Sources */,
 				FAE15C1C2422A81A00362B4D /* AppDelegate.swift in Sources */,
 				FA008E91244E4F89002511B0 /* RemoteAuthenticationFactory.swift in Sources */,
@@ -2192,6 +2196,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -2255,6 +2260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
